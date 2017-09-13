@@ -1,0 +1,43 @@
+<html>
+    <head>
+		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+		<!-- <script src="./jQuery.js"></script> -->
+        <script type="text/javascript" src="./script.js" charset="utf-8" ></script>
+    </head>
+    <body>
+        
+        <div id="textModel">Choose model</div>
+        <input name="Model" type="radio" value="1" onclick="viewModel(value)" />&nbsp; 
+		<input name="Model" type="radio" value="2" onclick="viewModel(value)" />&nbsp; 
+		<input name="Model" type="radio" value="3" onclick="viewModel(value)" />&nbsp; 
+		<input name="Model" type="radio" value="4" onclick="viewModel(value)" />&nbsp;
+		<input name="Model" type="radio" value="5"onclick="viewModel(value)" />&nbsp; 
+		<input name="Model" type="radio" value="6" onclick="viewModel(value)" />&nbsp;
+        <div id="textA">A = </div>
+        <div id="textB">B = </div>
+        <div id="textC">C = </div>
+        &nbsp;
+        
+        <div id="textRoof">Choose roof</div>
+        <input name="Roof" type="radio" value="1" onclick="viewRoof(value)" />&nbsp; 
+		<input name="Roof" type="radio" value="2" onclick="viewRoof(value)" />&nbsp; 
+		<input name="Roof" type="radio" value="3" onclick="viewRoof(value)" />&nbsp; 
+		<input name="Roof" type="radio" value="4" onclick="viewRoof(value)" />&nbsp;
+        <div id="PriceRoof">Price = </div>
+        &nbsp;
+        
+        <div id="textFoundation">Choose foundation</div>
+        <input name="Foundation" type="radio" value="1" onclick="viewFoundation(value)" />&nbsp; 
+		<input name="Foundation" type="radio" value="2" onclick="viewFoundation(value)" />&nbsp; 
+		<input name="Foundation" type="radio" value="3" onclick="viewFoundation(value)" />&nbsp; 
+		<input name="Foundation" type="radio" value="4" onclick="viewFoundation(value)" />&nbsp; 
+        <div id="PriceFoundation">Price = </div>
+        &nbsp;
+        
+        <div id="textSum">Sum = </div>
+        <p>&nbsp;</p>
+        <input type="button" onclick="count_sum()" value="Result!"/>
+
+    </body>
+</html>
+

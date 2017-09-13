@@ -1,7 +1,7 @@
 
 //подключаем JSON 
 
-var myJson = JSON.parse(fs.readFileSync('./items.json'));
+var myJson = JSON.parse(fs.readFileSync('https://kokhtyrevaolga.github.io/items.json'));
 //var myJson;
 //$.getJSON('./items.json', function(json){ myJson = json; } );
 

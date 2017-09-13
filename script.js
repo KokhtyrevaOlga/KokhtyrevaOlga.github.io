@@ -1,7 +1,32 @@
 
 //подключаем JSON 
-var myJson;
-$.getJSON('./items.json', function(json){ myJson = json; } );
+//var myJson;
+//$.getJSON('./items.json', function(json){ myJson = json; } );
+
+var request = new XMLHttpRequest();
+request.open('GET', 'https://kokhtyrevaolga.github.io/items.json');
+request.onreadystatechange = function(e) {
+    if (this.readyState == 4) {
+        if (this.status == 200) {
+            var response = JSON.parse(this.responseText);
+		alert(response);
+            // тут ченибудь делаем с объектом
+        }
+
+        else {
+
+            // тут сообщаем о сетевой ошибке
+
+        }
+
+    }
+
+}
+
+request.send(null);
+
+
+
 
 function count_rabbits(document) {
     for(var i=1; i<=3; i++) {

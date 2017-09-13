@@ -1,7 +1,7 @@
 
 //подключаем JSON 
 var myJson;
-$.getJSON("https://kokhtyrevaolga.github.io/items.json", function(json) {
+$.getJSON("KokhtyrevaOlga.github.io/items.json", function(json) {
     console.log(json); 
 });
 //$.getJSON('https://kokhtyrevaolga.github.io/items.json', function(json){ myJson = json; } );

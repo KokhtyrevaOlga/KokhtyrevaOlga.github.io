@@ -4,7 +4,7 @@ var myJson;
 //$.getJSON('./items.json', function(json){ myJson = json; } );
 
 var request = new XMLHttpRequest();
-request.open('GET', 'https://kokhtyrevaolga.github.io/items.json');
+request.open('GET', 'https://KokhtyrevaOlga.github.io/items.json');
 request.onreadystatechange = function(e) {
     if (this.readyState == 4) {
         if (this.status == 200) {

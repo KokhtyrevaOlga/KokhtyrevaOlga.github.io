@@ -1,12 +1,8 @@
 
 //подключаем JSON 
+var myJson;
+$.getJSON('./items.json', function(json){ myJson = json; } );
 
-var myJson = JSON.parse(fs.readFileSync('https://kokhtyrevaolga.github.io/items.json'));
-//var myJson;
-//$.getJSON('./items.json', function(json){ myJson = json; } );
-var req = new XMLHttpRequest();
-req.open('GET', 'kokhtyrevaolga.github.io/items.json');
-req.send();
 function count_rabbits(document) {
     for(var i=1; i<=3; i++) {
         alert(i)

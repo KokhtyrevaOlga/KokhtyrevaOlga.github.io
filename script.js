@@ -9,6 +9,7 @@ request.onreadystatechange = function(e) {
     if (this.readyState == 4) {
         if (this.status == 200) {
             myJson = JSON.parse(this.responseText);
+		alert(myJson.models[0]);
         }
         else {
 		alert("!!!");

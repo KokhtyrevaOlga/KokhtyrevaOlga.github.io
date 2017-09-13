@@ -9,15 +9,13 @@ request.onreadystatechange = function(e) {
     if (this.readyState == 4) {
         if (this.status == 200) {
             myJson = JSON.parse(this.responseText);
-            // тут ченибудь делаем с объектом
         }
         else {
 		alert("!!!");
-            // тут сообщаем о сетевой ошибке
         }
     }
 }
-request.send(null);
+//request.send(null);
 
 
 function count_rabbits(document) {

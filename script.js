@@ -42,7 +42,7 @@ function count_sum() {
         sum = eval(document.getElementById("PriceRoof").textContent.substring(8)) +
     eval(document.getElementById("PriceFoundation").textContent.substring(8));
     document.getElementById("textSum").textContent = "Sum = " + sum;
-	alert(request);
+	
 }
 
 // Тест (не используется)

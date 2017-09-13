@@ -1,10 +1,7 @@
 
 //подключаем JSON 
 var myJson;
-$.getJSON("KokhtyrevaOlga.github.io/items.json", function(json) {
-    console.log(json); 
-});
-//$.getJSON('https://kokhtyrevaolga.github.io/items.json', function(json){ myJson = json; } );
+$.getJSON('https://kokhtyrevaolga.github.io/items.json', function(json){ myJson = json; } );
 
 
 function count_rabbits(document) {

@@ -1,6 +1,6 @@
 
 //подключаем JSON 
-//var myJson;
+var myJson;
 //$.getJSON('./items.json', function(json){ myJson = json; } );
 
 var request = new XMLHttpRequest();
@@ -8,8 +8,8 @@ request.open('GET', 'https://kokhtyrevaolga.github.io/items.json');
 request.onreadystatechange = function(e) {
     if (this.readyState == 4) {
         if (this.status == 200) {
-            var response = JSON.parse(this.responseText);
-		alert(response);
+            myJson = JSON.parse(this.responseText);
+		alert(myJson);
             // тут ченибудь делаем с объектом
         }
 

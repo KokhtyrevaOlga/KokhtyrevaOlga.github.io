@@ -4,7 +4,8 @@
 var myJson = JSON.parse(fs.readFileSync('https://kokhtyrevaolga.github.io/items.json'));
 //var myJson;
 //$.getJSON('./items.json', function(json){ myJson = json; } );
-
+var req = new XMLHttpRequest();
+req.open('GET', 'https://kokhtyrevaolga.github.io/items.json');
 
 function count_rabbits(document) {
     for(var i=1; i<=3; i++) {
@@ -19,7 +20,7 @@ function count_sum() {
         sum = eval(document.getElementById("PriceRoof").textContent.substring(8)) +
     eval(document.getElementById("PriceFoundation").textContent.substring(8));
     document.getElementById("textSum").textContent = "Sum = " + sum;
-	alert(myJson);
+	alert(req);
 }
 
 // Тест (не используется)

@@ -15,7 +15,7 @@ request.onreadystatechange = function(e) {
         }
     }
 }
-//request.send(null);
+request.send(null);
 
 
 function count_rabbits(document) {

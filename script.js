@@ -1,7 +1,9 @@
 
 //подключаем JSON 
-var myJson;
-$.getJSON('./items.json', function(json){ myJson = json; } );
+
+var myJson = JSON.parse(fs.readFileSync('./items.json'));
+//var myJson;
+//$.getJSON('./items.json', function(json){ myJson = json; } );
 
 
 function count_rabbits(document) {
